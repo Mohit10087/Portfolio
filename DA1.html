@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohit Miglani - Portfolio</title>
+  <link rel="stylesheet" href="DA1.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mohit Miglani</h1>
+    <p>Web Developer | Student | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="img.jpg" alt="My Photo" width="150">
+    <p>I am a Computer Science student passionate about web development and software engineering.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in CSE – VIT, Vellore (2023–2027)</li>
+      <li>12th – CBSE – 2023</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, C</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Personal Portfolio Website</li>
+      <li>Library Management System (Python)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: mohit.miglani2023@vitstudent.ac.in</p>
+    <p>GitHub: <a href="https://github.com/Mohit10087/Portfolio">github.com/Mohit10087</a></p>
+  </section>
+
+  <footer>
+    <p>© 2027 Mohit Miglani</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
